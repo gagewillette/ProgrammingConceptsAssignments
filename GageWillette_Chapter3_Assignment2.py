@@ -43,8 +43,10 @@ if areaOne > areaTwo:
     #let user know areaOne is larger
     print(f"The first rect is bigger than the second by {diff} units!")
 # run if first condition is not met
-else:
+elif areaTwo > areaOne:
     #compute difference between areaTwo and areaOne
     diff = areaTwo - areaOne
     #let user know areaTwo is larger
     print(f"The second rect is bigger than the first by {diff} units!")
+else:
+    print("The areas are the same!")
