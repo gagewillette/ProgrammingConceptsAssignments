@@ -30,14 +30,23 @@ while True:
         #restart loop
         continue
 
+#compute both areas for later comparison
 areaOne = lengthOne * widthOne
 areaTwo = lengthTwo * widthTwo
 
 print("debug: " , areaOne , " " , areaTwo)
 
+#check if areaOne is larger than areaTwo
 if areaOne > areaTwo:
+    #computer difference between areaOne and areaTwo
     diff = areaOne - areaTwo
+    #let user know areaOne is larger
     print(f"The first rect is bigger than the second by {diff} units!")
-else:
+# run if first condition is not met
+elif areaTwo > areaOne:
+    #compute difference between areaTwo and areaOne
     diff = areaTwo - areaOne
+    #let user know areaTwo is larger
     print(f"The second rect is bigger than the first by {diff} units!")
+else:
+    print("The areas are the same!")
